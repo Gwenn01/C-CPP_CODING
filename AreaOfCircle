@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <conio.h>
+#define p printf
+#define s scanf
+
+int main()
+{
+    float PI = 3.14;
+    float radius, inch, cm, ft;
+    float Area, Inch, Cm, Ft;
+    p("Enter the radius: ");
+    s("%f", &radius);
+    p("Enter the inches: ");
+    s("%f", &inch);
+    p("Enter cm: ");
+    s("%f", &cm);
+    p("Enter ft: ");
+    s("%f", &ft);
+    
+    Area = PI * radius * radius;
+    p("The area of circle is %f \n", Area);
+    Inch = PI * inch * inch;
+    p("The area of cirle in inch %f \n", Inch);
+    cm = cm / 2;
+    Cm = PI * cm * cm;
+    p("The area of circle in cm %f \n", Cm);
+    ft = ft / 2;
+    Ft = PI * ft * ft;
+    p("The area of circle in ft %f \n", Ft);
+    return 0;
+}

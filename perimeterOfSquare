@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <conio.h>
+#define p printf
+#define s scanf
+
+int main()
+{
+    float SqrTopBottom, SqrLeftRight;
+    float perimeter, Sqrside;
+    
+    p("Enter the Square Top and Bottom: ");
+    s("%f", &SqrTopBottom);
+    p("Enter the Square Left and Right: ");
+    s("%f", &SqrLeftRight);
+    Sqrside = SqrTopBottom + SqrLeftRight;
+    p("The Square Sides is: %f\n", Sqrside);
+    perimeter = 4 * Sqrside;
+    p("The perimeter of square is %f\n", perimeter);
+    return 0;
+}
